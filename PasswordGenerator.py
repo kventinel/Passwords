@@ -21,6 +21,7 @@ def _main(args):
     symbols = string.digits
     if not args.only_digits:
         symbols += string.ascii_letters
+        symbols += '!@#$%^&*()_-=+,<.>/?'
     print(pass_generator(args.size, symbols))
 
 if __name__ == "__main__":
